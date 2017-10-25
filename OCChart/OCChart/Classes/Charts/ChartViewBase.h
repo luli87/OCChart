@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "XAxis.h"
 
 @interface ChartViewBase : UIView
-
+@property (strong,nonatomic) XAxis * xAxis;
 @end

@@ -35,6 +35,18 @@
     return _axisValueFormatter;
 }
 
+-(void)setAxisMiniMum:(double)axisMiniMum
+{
+    _axisMiniMum = axisMiniMum;
+    self.axisRange = fabs(self.axisMaxiMum - self.axisMiniMum);
+}
+
+-(void)setAxisMaxiMum:(double)axisMaxiMum
+{
+    _axisMaxiMum = axisMaxiMum;
+    self.axisRange = fabs(self.axisMaxiMum - self.axisMiniMum);
+}
+
 -(NSString *)getFormattedLabel:(int)index
 {
     if (index < 0 || index >= self.entries.count) {

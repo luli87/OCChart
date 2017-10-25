@@ -13,7 +13,7 @@ typedef enum : NSUInteger {
     leftBottom,
     rightTop,
     rightBottom,
-} LabelPosition;
+} ChartLimitLabelPosition;
 
 @interface ChartLimitLine : ComponentBase
 @property(nonatomic,assign)double limit;
