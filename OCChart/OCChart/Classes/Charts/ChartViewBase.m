@@ -18,4 +18,17 @@
 }
 */
 
+-(void)initialize
+{
+    
+}
+
+-(void)setExtraOffsets:(CGFloat)left top:(CGFloat)top right:(CGFloat)right bottom:(CGFloat)bottom
+{
+    self.extraLeftOffset = left;
+    self.extraTopOffset = top;
+    self.extraRightOffset = right;
+    self.extraBottomOffset = bottom;
+}
+
 @end

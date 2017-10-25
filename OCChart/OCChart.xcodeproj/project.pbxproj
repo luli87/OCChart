@@ -45,12 +45,16 @@
 		A1288A121FA05B8A0077BB62 /* Description.m in Sources */ = {isa = PBXBuildFile; fileRef = A1288A101FA05B8A0077BB62 /* Description.m */; };
 		A1288A151FA05BDE0077BB62 /* Legend.h in Headers */ = {isa = PBXBuildFile; fileRef = A1288A131FA05BDE0077BB62 /* Legend.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1288A161FA05BDE0077BB62 /* Legend.m in Sources */ = {isa = PBXBuildFile; fileRef = A1288A141FA05BDE0077BB62 /* Legend.m */; };
-		A1288A191FA05DFA0077BB62 /* Renderer.h in Headers */ = {isa = PBXBuildFile; fileRef = A1288A171FA05DFA0077BB62 /* Renderer.h */; };
+		A1288A191FA05DFA0077BB62 /* Renderer.h in Headers */ = {isa = PBXBuildFile; fileRef = A1288A171FA05DFA0077BB62 /* Renderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1288A1A1FA05DFA0077BB62 /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1288A181FA05DFA0077BB62 /* Renderer.m */; };
-		A1288A1D1FA05E090077BB62 /* LegendRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = A1288A1B1FA05E090077BB62 /* LegendRenderer.h */; };
+		A1288A1D1FA05E090077BB62 /* LegendRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = A1288A1B1FA05E090077BB62 /* LegendRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1288A1E1FA05E090077BB62 /* LegendRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1288A1C1FA05E090077BB62 /* LegendRenderer.m */; };
-		A1288A211FA05F4A0077BB62 /* DataRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = A1288A1F1FA05F4A0077BB62 /* DataRenderer.h */; };
+		A1288A211FA05F4A0077BB62 /* DataRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = A1288A1F1FA05F4A0077BB62 /* DataRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1288A221FA05F4A0077BB62 /* DataRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1288A201FA05F4A0077BB62 /* DataRenderer.m */; };
+		A137F59B1FA0C1FC0000D457 /* IHighlighter.h in Headers */ = {isa = PBXBuildFile; fileRef = A137F59A1FA0C1FC0000D457 /* IHighlighter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A137F59E1FA0C24C0000D457 /* Highlight.h in Headers */ = {isa = PBXBuildFile; fileRef = A137F59C1FA0C24C0000D457 /* Highlight.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A137F59F1FA0C24C0000D457 /* Highlight.m in Sources */ = {isa = PBXBuildFile; fileRef = A137F59D1FA0C24C0000D457 /* Highlight.m */; };
+		A137F5A11FA0C50D0000D457 /* IMarker.h in Headers */ = {isa = PBXBuildFile; fileRef = A137F5A01FA0C50D0000D457 /* IMarker.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1A92AFD1F9F6FCC009EDF51 /* OCChart.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D5C5301F9F6CC2006C309E /* OCChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1D5C5131F9F6BA1006C309E /* OCChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D5C5091F9F6BA0006C309E /* OCChart.framework */; };
 		A1D5C5181F9F6BA1006C309E /* OCChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D5C5171F9F6BA1006C309E /* OCChartTests.m */; };
@@ -111,6 +115,10 @@
 		A1288A1C1FA05E090077BB62 /* LegendRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LegendRenderer.m; sourceTree = "<group>"; };
 		A1288A1F1FA05F4A0077BB62 /* DataRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataRenderer.h; sourceTree = "<group>"; };
 		A1288A201FA05F4A0077BB62 /* DataRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataRenderer.m; sourceTree = "<group>"; };
+		A137F59A1FA0C1FC0000D457 /* IHighlighter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IHighlighter.h; sourceTree = "<group>"; };
+		A137F59C1FA0C24C0000D457 /* Highlight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Highlight.h; sourceTree = "<group>"; };
+		A137F59D1FA0C24C0000D457 /* Highlight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Highlight.m; sourceTree = "<group>"; };
+		A137F5A01FA0C50D0000D457 /* IMarker.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IMarker.h; sourceTree = "<group>"; };
 		A1D5C5091F9F6BA0006C309E /* OCChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D5C5121F9F6BA1006C309E /* OCChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D5C5171F9F6BA1006C309E /* OCChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCChartTests.m; sourceTree = "<group>"; };
@@ -175,6 +183,7 @@
 				A12889EB1FA021BF0077BB62 /* YAxis.m */,
 				A12889C61FA01F3A0077BB62 /* ChartLimitLine.h */,
 				A12889C71FA01F3A0077BB62 /* ChartLimitLine.m */,
+				A137F5A01FA0C50D0000D457 /* IMarker.h */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -234,13 +243,6 @@
 			path = Filters;
 			sourceTree = "<group>";
 		};
-		A12889F41FA02DEB0077BB62 /* Hightlight */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Hightlight;
-			sourceTree = "<group>";
-		};
 		A12889F51FA02E070077BB62 /* Jobs */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +283,16 @@
 				A1288A0C1FA04C940077BB62 /* ChartData.m */,
 			);
 			path = Standard;
+			sourceTree = "<group>";
+		};
+		A137F5991FA0C17C0000D457 /* Highlight */ = {
+			isa = PBXGroup;
+			children = (
+				A137F59A1FA0C1FC0000D457 /* IHighlighter.h */,
+				A137F59C1FA0C24C0000D457 /* Highlight.h */,
+				A137F59D1FA0C24C0000D457 /* Highlight.m */,
+			);
+			path = Highlight;
 			sourceTree = "<group>";
 		};
 		A1D5C4FF1F9F6BA0006C309E = {
@@ -325,11 +337,11 @@
 				A12889CF1FA01F3B0077BB62 /* Animation */,
 				A12889CA1FA01F3A0077BB62 /* Charts */,
 				A12889C31FA01F3A0077BB62 /* Components */,
-				A12889BC1FA01F3A0077BB62 /* Formatters */,
 				A12889B71FA01F390077BB62 /* Interfaces */,
 				A12889F01FA02D810077BB62 /* Data */,
 				A12889F31FA02DC50077BB62 /* Filters */,
-				A12889F41FA02DEB0077BB62 /* Hightlight */,
+				A12889BC1FA01F3A0077BB62 /* Formatters */,
+				A137F5991FA0C17C0000D457 /* Highlight */,
 				A12889F51FA02E070077BB62 /* Jobs */,
 				A12889F61FA02E190077BB62 /* Renderers */,
 				A12889F71FA02E2A0077BB62 /* Utils */,
@@ -356,13 +368,10 @@
 				A12889D81FA01F3B0077BB62 /* AxisBase.h in Headers */,
 				A1288A091FA047050077BB62 /* ViewPortHandler.h in Headers */,
 				A1288A0D1FA04C940077BB62 /* ChartData.h in Headers */,
-				A1288A211FA05F4A0077BB62 /* DataRenderer.h in Headers */,
 				A12889FC1FA02E910077BB62 /* ChartBaseDataSet.h in Headers */,
 				A1288A011FA043170077BB62 /* ChartDataEntryBase.h in Headers */,
-				A1288A1D1FA05E090077BB62 /* LegendRenderer.h in Headers */,
 				A12889DC1FA01F3B0077BB62 /* ComponentBase.h in Headers */,
 				A12889EF1FA02C4E0077BB62 /* IValueFormatter.h in Headers */,
-				A1288A191FA05DFA0077BB62 /* Renderer.h in Headers */,
 				A12889D51FA01F3B0077BB62 /* DefaultAxisValueFormatter.h in Headers */,
 				A12889F91FA02E7A0077BB62 /* IChartDataSet.h in Headers */,
 				A12889E81FA021B00077BB62 /* XAxis.h in Headers */,
@@ -374,6 +383,12 @@
 				A12889D31FA01F3B0077BB62 /* BarLineScatterCandleBubbleChartDataProvider.h in Headers */,
 				A12889D41FA01F3B0077BB62 /* ChartDataProvider.h in Headers */,
 				A12889DA1FA01F3B0077BB62 /* ChartLimitLine.h in Headers */,
+				A137F5A11FA0C50D0000D457 /* IMarker.h in Headers */,
+				A137F59E1FA0C24C0000D457 /* Highlight.h in Headers */,
+				A1288A211FA05F4A0077BB62 /* DataRenderer.h in Headers */,
+				A1288A1D1FA05E090077BB62 /* LegendRenderer.h in Headers */,
+				A1288A191FA05DFA0077BB62 /* Renderer.h in Headers */,
+				A137F59B1FA0C1FC0000D457 /* IHighlighter.h in Headers */,
 				A12889E41FA01F3B0077BB62 /* ChartAnimationEasing.h in Headers */,
 				A12889D71FA01F3B0077BB62 /* IAxisValueFormatter.h in Headers */,
 				A12889EC1FA021BF0077BB62 /* YAxis.h in Headers */,
@@ -482,6 +497,7 @@
 			files = (
 				A1288A221FA05F4A0077BB62 /* DataRenderer.m in Sources */,
 				A1288A1A1FA05DFA0077BB62 /* Renderer.m in Sources */,
+				A137F59F1FA0C24C0000D457 /* Highlight.m in Sources */,
 				A1288A0A1FA047050077BB62 /* ViewPortHandler.m in Sources */,
 				A12889D61FA01F3B0077BB62 /* DefaultAxisValueFormatter.m in Sources */,
 				A1288A1E1FA05E090077BB62 /* LegendRenderer.m in Sources */,
