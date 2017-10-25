@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ChartDataEntry.h"
+#import "ViewPortHandler.h"
 
 @protocol IValueFormatter <NSObject>
--(NSString *)stringForValue:(double)value :()
+-(NSString *)stringForValue:(double)value :(ChartDataEntry *)entry index:(int)dataSetIndex viewPortHandler:(ViewPortHandler *)viewPortHandler;
 @end

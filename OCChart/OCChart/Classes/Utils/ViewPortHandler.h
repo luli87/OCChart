@@ -1,5 +1,5 @@
 //
-//  ChartBaseDataSet.h
+//  ViewPortHandler.h
 //  OCChart
 //
 //  Created by luli on 2017/10/25.
@@ -8,12 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-typedef enum : NSUInteger {
-    up,
-    down,
-    closet,
-} ChartDataSetRounding;
-
-@interface ChartBaseDataSet : NSObject
+@interface ViewPortHandler : NSObject
 
 @end

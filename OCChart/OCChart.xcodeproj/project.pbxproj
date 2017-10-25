@@ -7,32 +7,50 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A12889D31FA01F3B0077BB62 /* BarLineScatterCandleBubbleChartDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889B81FA01F390077BB62 /* BarLineScatterCandleBubbleChartDataProvider.h */; };
-		A12889D41FA01F3B0077BB62 /* ChartDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889B91FA01F390077BB62 /* ChartDataProvider.h */; };
-		A12889D51FA01F3B0077BB62 /* DefaultAxisValueFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889BD1FA01F3A0077BB62 /* DefaultAxisValueFormatter.h */; };
+		A12889D31FA01F3B0077BB62 /* BarLineScatterCandleBubbleChartDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889B81FA01F390077BB62 /* BarLineScatterCandleBubbleChartDataProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A12889D41FA01F3B0077BB62 /* ChartDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889B91FA01F390077BB62 /* ChartDataProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A12889D51FA01F3B0077BB62 /* DefaultAxisValueFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889BD1FA01F3A0077BB62 /* DefaultAxisValueFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A12889D61FA01F3B0077BB62 /* DefaultAxisValueFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A12889BE1FA01F3A0077BB62 /* DefaultAxisValueFormatter.m */; };
-		A12889D71FA01F3B0077BB62 /* IAxisValueFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889BF1FA01F3A0077BB62 /* IAxisValueFormatter.h */; };
-		A12889D81FA01F3B0077BB62 /* AxisBase.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889C41FA01F3A0077BB62 /* AxisBase.h */; };
-		A12889DA1FA01F3B0077BB62 /* ChartLimitLine.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889C61FA01F3A0077BB62 /* ChartLimitLine.h */; };
+		A12889D71FA01F3B0077BB62 /* IAxisValueFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889BF1FA01F3A0077BB62 /* IAxisValueFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A12889D81FA01F3B0077BB62 /* AxisBase.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889C41FA01F3A0077BB62 /* AxisBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A12889DA1FA01F3B0077BB62 /* ChartLimitLine.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889C61FA01F3A0077BB62 /* ChartLimitLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A12889DB1FA01F3B0077BB62 /* ChartLimitLine.m in Sources */ = {isa = PBXBuildFile; fileRef = A12889C71FA01F3A0077BB62 /* ChartLimitLine.m */; };
-		A12889DC1FA01F3B0077BB62 /* ComponentBase.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889C81FA01F3A0077BB62 /* ComponentBase.h */; };
+		A12889DC1FA01F3B0077BB62 /* ComponentBase.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889C81FA01F3A0077BB62 /* ComponentBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A12889DD1FA01F3B0077BB62 /* ComponentBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A12889C91FA01F3A0077BB62 /* ComponentBase.m */; };
-		A12889DE1FA01F3B0077BB62 /* BarLineChartViewBase.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889CB1FA01F3A0077BB62 /* BarLineChartViewBase.h */; };
+		A12889DE1FA01F3B0077BB62 /* BarLineChartViewBase.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889CB1FA01F3A0077BB62 /* BarLineChartViewBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A12889DF1FA01F3B0077BB62 /* BarLineChartViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A12889CC1FA01F3A0077BB62 /* BarLineChartViewBase.m */; };
 		A12889E01FA01F3B0077BB62 /* ChartViewBase.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889CD1FA01F3A0077BB62 /* ChartViewBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A12889E11FA01F3B0077BB62 /* ChartViewBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A12889CE1FA01F3B0077BB62 /* ChartViewBase.m */; };
-		A12889E21FA01F3B0077BB62 /* Animator.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889D01FA01F3B0077BB62 /* Animator.h */; };
+		A12889E21FA01F3B0077BB62 /* Animator.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889D01FA01F3B0077BB62 /* Animator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A12889E31FA01F3B0077BB62 /* Animator.m in Sources */ = {isa = PBXBuildFile; fileRef = A12889D11FA01F3B0077BB62 /* Animator.m */; };
-		A12889E41FA01F3B0077BB62 /* ChartAnimationEasing.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889D21FA01F3B0077BB62 /* ChartAnimationEasing.h */; };
+		A12889E41FA01F3B0077BB62 /* ChartAnimationEasing.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889D21FA01F3B0077BB62 /* ChartAnimationEasing.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A12889E51FA020B90077BB62 /* AxisBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A12889C51FA01F3A0077BB62 /* AxisBase.m */; };
-		A12889E81FA021B00077BB62 /* XAxis.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889E61FA021B00077BB62 /* XAxis.h */; };
+		A12889E81FA021B00077BB62 /* XAxis.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889E61FA021B00077BB62 /* XAxis.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A12889E91FA021B00077BB62 /* XAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = A12889E71FA021B00077BB62 /* XAxis.m */; };
-		A12889EC1FA021BF0077BB62 /* YAxis.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889EA1FA021BF0077BB62 /* YAxis.h */; };
+		A12889EC1FA021BF0077BB62 /* YAxis.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889EA1FA021BF0077BB62 /* YAxis.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A12889ED1FA021BF0077BB62 /* YAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = A12889EB1FA021BF0077BB62 /* YAxis.m */; };
-		A12889EF1FA02C4E0077BB62 /* IValueFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889EE1FA02C4E0077BB62 /* IValueFormatter.h */; };
-		A12889F91FA02E7A0077BB62 /* IChartDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889F81FA02E7A0077BB62 /* IChartDataSet.h */; };
-		A12889FC1FA02E910077BB62 /* ChartBaseDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889FA1FA02E910077BB62 /* ChartBaseDataSet.h */; };
+		A12889EF1FA02C4E0077BB62 /* IValueFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889EE1FA02C4E0077BB62 /* IValueFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A12889F91FA02E7A0077BB62 /* IChartDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889F81FA02E7A0077BB62 /* IChartDataSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A12889FC1FA02E910077BB62 /* ChartBaseDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889FA1FA02E910077BB62 /* ChartBaseDataSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A12889FD1FA02E910077BB62 /* ChartBaseDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A12889FB1FA02E910077BB62 /* ChartBaseDataSet.m */; };
+		A1288A011FA043170077BB62 /* ChartDataEntryBase.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889FF1FA043170077BB62 /* ChartDataEntryBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1288A021FA043170077BB62 /* ChartDataEntryBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A1288A001FA043170077BB62 /* ChartDataEntryBase.m */; };
+		A1288A051FA044870077BB62 /* ChartDataEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = A1288A031FA044870077BB62 /* ChartDataEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1288A061FA044870077BB62 /* ChartDataEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = A1288A041FA044870077BB62 /* ChartDataEntry.m */; };
+		A1288A091FA047050077BB62 /* ViewPortHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = A1288A071FA047050077BB62 /* ViewPortHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1288A0A1FA047050077BB62 /* ViewPortHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = A1288A081FA047050077BB62 /* ViewPortHandler.m */; };
+		A1288A0D1FA04C940077BB62 /* ChartData.h in Headers */ = {isa = PBXBuildFile; fileRef = A1288A0B1FA04C940077BB62 /* ChartData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1288A0E1FA04C940077BB62 /* ChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = A1288A0C1FA04C940077BB62 /* ChartData.m */; };
+		A1288A111FA05B8A0077BB62 /* Description.h in Headers */ = {isa = PBXBuildFile; fileRef = A1288A0F1FA05B8A0077BB62 /* Description.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1288A121FA05B8A0077BB62 /* Description.m in Sources */ = {isa = PBXBuildFile; fileRef = A1288A101FA05B8A0077BB62 /* Description.m */; };
+		A1288A151FA05BDE0077BB62 /* Legend.h in Headers */ = {isa = PBXBuildFile; fileRef = A1288A131FA05BDE0077BB62 /* Legend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1288A161FA05BDE0077BB62 /* Legend.m in Sources */ = {isa = PBXBuildFile; fileRef = A1288A141FA05BDE0077BB62 /* Legend.m */; };
+		A1288A191FA05DFA0077BB62 /* Renderer.h in Headers */ = {isa = PBXBuildFile; fileRef = A1288A171FA05DFA0077BB62 /* Renderer.h */; };
+		A1288A1A1FA05DFA0077BB62 /* Renderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1288A181FA05DFA0077BB62 /* Renderer.m */; };
+		A1288A1D1FA05E090077BB62 /* LegendRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = A1288A1B1FA05E090077BB62 /* LegendRenderer.h */; };
+		A1288A1E1FA05E090077BB62 /* LegendRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1288A1C1FA05E090077BB62 /* LegendRenderer.m */; };
+		A1288A211FA05F4A0077BB62 /* DataRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = A1288A1F1FA05F4A0077BB62 /* DataRenderer.h */; };
+		A1288A221FA05F4A0077BB62 /* DataRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1288A201FA05F4A0077BB62 /* DataRenderer.m */; };
 		A1A92AFD1F9F6FCC009EDF51 /* OCChart.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D5C5301F9F6CC2006C309E /* OCChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1D5C5131F9F6BA1006C309E /* OCChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D5C5091F9F6BA0006C309E /* OCChart.framework */; };
 		A1D5C5181F9F6BA1006C309E /* OCChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D5C5171F9F6BA1006C309E /* OCChartTests.m */; };
@@ -75,6 +93,24 @@
 		A12889F81FA02E7A0077BB62 /* IChartDataSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IChartDataSet.h; sourceTree = "<group>"; };
 		A12889FA1FA02E910077BB62 /* ChartBaseDataSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartBaseDataSet.h; sourceTree = "<group>"; };
 		A12889FB1FA02E910077BB62 /* ChartBaseDataSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartBaseDataSet.m; sourceTree = "<group>"; };
+		A12889FF1FA043170077BB62 /* ChartDataEntryBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartDataEntryBase.h; sourceTree = "<group>"; };
+		A1288A001FA043170077BB62 /* ChartDataEntryBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartDataEntryBase.m; sourceTree = "<group>"; };
+		A1288A031FA044870077BB62 /* ChartDataEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartDataEntry.h; sourceTree = "<group>"; };
+		A1288A041FA044870077BB62 /* ChartDataEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartDataEntry.m; sourceTree = "<group>"; };
+		A1288A071FA047050077BB62 /* ViewPortHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewPortHandler.h; sourceTree = "<group>"; };
+		A1288A081FA047050077BB62 /* ViewPortHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewPortHandler.m; sourceTree = "<group>"; };
+		A1288A0B1FA04C940077BB62 /* ChartData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartData.h; sourceTree = "<group>"; };
+		A1288A0C1FA04C940077BB62 /* ChartData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartData.m; sourceTree = "<group>"; };
+		A1288A0F1FA05B8A0077BB62 /* Description.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Description.h; sourceTree = "<group>"; };
+		A1288A101FA05B8A0077BB62 /* Description.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Description.m; sourceTree = "<group>"; };
+		A1288A131FA05BDE0077BB62 /* Legend.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Legend.h; sourceTree = "<group>"; };
+		A1288A141FA05BDE0077BB62 /* Legend.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Legend.m; sourceTree = "<group>"; };
+		A1288A171FA05DFA0077BB62 /* Renderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Renderer.h; sourceTree = "<group>"; };
+		A1288A181FA05DFA0077BB62 /* Renderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Renderer.m; sourceTree = "<group>"; };
+		A1288A1B1FA05E090077BB62 /* LegendRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LegendRenderer.h; sourceTree = "<group>"; };
+		A1288A1C1FA05E090077BB62 /* LegendRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LegendRenderer.m; sourceTree = "<group>"; };
+		A1288A1F1FA05F4A0077BB62 /* DataRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataRenderer.h; sourceTree = "<group>"; };
+		A1288A201FA05F4A0077BB62 /* DataRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataRenderer.m; sourceTree = "<group>"; };
 		A1D5C5091F9F6BA0006C309E /* OCChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D5C5121F9F6BA1006C309E /* OCChartTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCChartTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1D5C5171F9F6BA1006C309E /* OCChartTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCChartTests.m; sourceTree = "<group>"; };
@@ -125,6 +161,12 @@
 		A12889C31FA01F3A0077BB62 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A12889C81FA01F3A0077BB62 /* ComponentBase.h */,
+				A12889C91FA01F3A0077BB62 /* ComponentBase.m */,
+				A1288A131FA05BDE0077BB62 /* Legend.h */,
+				A1288A141FA05BDE0077BB62 /* Legend.m */,
+				A1288A0F1FA05B8A0077BB62 /* Description.h */,
+				A1288A101FA05B8A0077BB62 /* Description.m */,
 				A12889C41FA01F3A0077BB62 /* AxisBase.h */,
 				A12889C51FA01F3A0077BB62 /* AxisBase.m */,
 				A12889E61FA021B00077BB62 /* XAxis.h */,
@@ -133,8 +175,6 @@
 				A12889EB1FA021BF0077BB62 /* YAxis.m */,
 				A12889C61FA01F3A0077BB62 /* ChartLimitLine.h */,
 				A12889C71FA01F3A0077BB62 /* ChartLimitLine.m */,
-				A12889C81FA01F3A0077BB62 /* ComponentBase.h */,
-				A12889C91FA01F3A0077BB62 /* ComponentBase.m */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -174,6 +214,7 @@
 			children = (
 				A12889FA1FA02E910077BB62 /* ChartBaseDataSet.h */,
 				A12889FB1FA02E910077BB62 /* ChartBaseDataSet.m */,
+				A12889FE1FA043030077BB62 /* Standard */,
 			);
 			path = Implementations;
 			sourceTree = "<group>";
@@ -210,6 +251,12 @@
 		A12889F61FA02E190077BB62 /* Renderers */ = {
 			isa = PBXGroup;
 			children = (
+				A1288A171FA05DFA0077BB62 /* Renderer.h */,
+				A1288A181FA05DFA0077BB62 /* Renderer.m */,
+				A1288A1B1FA05E090077BB62 /* LegendRenderer.h */,
+				A1288A1C1FA05E090077BB62 /* LegendRenderer.m */,
+				A1288A1F1FA05F4A0077BB62 /* DataRenderer.h */,
+				A1288A201FA05F4A0077BB62 /* DataRenderer.m */,
 			);
 			path = Renderers;
 			sourceTree = "<group>";
@@ -217,8 +264,23 @@
 		A12889F71FA02E2A0077BB62 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				A1288A071FA047050077BB62 /* ViewPortHandler.h */,
+				A1288A081FA047050077BB62 /* ViewPortHandler.m */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		A12889FE1FA043030077BB62 /* Standard */ = {
+			isa = PBXGroup;
+			children = (
+				A12889FF1FA043170077BB62 /* ChartDataEntryBase.h */,
+				A1288A001FA043170077BB62 /* ChartDataEntryBase.m */,
+				A1288A031FA044870077BB62 /* ChartDataEntry.h */,
+				A1288A041FA044870077BB62 /* ChartDataEntry.m */,
+				A1288A0B1FA04C940077BB62 /* ChartData.h */,
+				A1288A0C1FA04C940077BB62 /* ChartData.m */,
+			);
+			path = Standard;
 			sourceTree = "<group>";
 		};
 		A1D5C4FF1F9F6BA0006C309E = {
@@ -292,22 +354,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				A12889D81FA01F3B0077BB62 /* AxisBase.h in Headers */,
+				A1288A091FA047050077BB62 /* ViewPortHandler.h in Headers */,
+				A1288A0D1FA04C940077BB62 /* ChartData.h in Headers */,
+				A1288A211FA05F4A0077BB62 /* DataRenderer.h in Headers */,
 				A12889FC1FA02E910077BB62 /* ChartBaseDataSet.h in Headers */,
-				A12889E01FA01F3B0077BB62 /* ChartViewBase.h in Headers */,
+				A1288A011FA043170077BB62 /* ChartDataEntryBase.h in Headers */,
+				A1288A1D1FA05E090077BB62 /* LegendRenderer.h in Headers */,
 				A12889DC1FA01F3B0077BB62 /* ComponentBase.h in Headers */,
 				A12889EF1FA02C4E0077BB62 /* IValueFormatter.h in Headers */,
+				A1288A191FA05DFA0077BB62 /* Renderer.h in Headers */,
 				A12889D51FA01F3B0077BB62 /* DefaultAxisValueFormatter.h in Headers */,
-				A1A92AFD1F9F6FCC009EDF51 /* OCChart.h in Headers */,
 				A12889F91FA02E7A0077BB62 /* IChartDataSet.h in Headers */,
 				A12889E81FA021B00077BB62 /* XAxis.h in Headers */,
 				A12889E21FA01F3B0077BB62 /* Animator.h in Headers */,
+				A1288A151FA05BDE0077BB62 /* Legend.h in Headers */,
+				A1288A051FA044870077BB62 /* ChartDataEntry.h in Headers */,
 				A12889DE1FA01F3B0077BB62 /* BarLineChartViewBase.h in Headers */,
+				A1288A111FA05B8A0077BB62 /* Description.h in Headers */,
 				A12889D31FA01F3B0077BB62 /* BarLineScatterCandleBubbleChartDataProvider.h in Headers */,
 				A12889D41FA01F3B0077BB62 /* ChartDataProvider.h in Headers */,
 				A12889DA1FA01F3B0077BB62 /* ChartLimitLine.h in Headers */,
 				A12889E41FA01F3B0077BB62 /* ChartAnimationEasing.h in Headers */,
 				A12889D71FA01F3B0077BB62 /* IAxisValueFormatter.h in Headers */,
 				A12889EC1FA021BF0077BB62 /* YAxis.h in Headers */,
+				A12889E01FA01F3B0077BB62 /* ChartViewBase.h in Headers */,
+				A1A92AFD1F9F6FCC009EDF51 /* OCChart.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,14 +480,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1288A221FA05F4A0077BB62 /* DataRenderer.m in Sources */,
+				A1288A1A1FA05DFA0077BB62 /* Renderer.m in Sources */,
+				A1288A0A1FA047050077BB62 /* ViewPortHandler.m in Sources */,
 				A12889D61FA01F3B0077BB62 /* DefaultAxisValueFormatter.m in Sources */,
+				A1288A1E1FA05E090077BB62 /* LegendRenderer.m in Sources */,
+				A1288A161FA05BDE0077BB62 /* Legend.m in Sources */,
 				A12889DD1FA01F3B0077BB62 /* ComponentBase.m in Sources */,
 				A12889FD1FA02E910077BB62 /* ChartBaseDataSet.m in Sources */,
 				A12889E11FA01F3B0077BB62 /* ChartViewBase.m in Sources */,
 				A12889ED1FA021BF0077BB62 /* YAxis.m in Sources */,
+				A1288A0E1FA04C940077BB62 /* ChartData.m in Sources */,
+				A1288A061FA044870077BB62 /* ChartDataEntry.m in Sources */,
+				A1288A021FA043170077BB62 /* ChartDataEntryBase.m in Sources */,
 				A12889E51FA020B90077BB62 /* AxisBase.m in Sources */,
 				A12889DB1FA01F3B0077BB62 /* ChartLimitLine.m in Sources */,
 				A12889E31FA01F3B0077BB62 /* Animator.m in Sources */,
+				A1288A121FA05B8A0077BB62 /* Description.m in Sources */,
 				A12889DF1FA01F3B0077BB62 /* BarLineChartViewBase.m in Sources */,
 				A12889E91FA021B00077BB62 /* XAxis.m in Sources */,
 			);
