@@ -185,4 +185,19 @@
     }
 }
 
+-(int)entryCount
+{
+    int count = 0;
+    for (id<IChartDataSet> set in self.dataSets) {
+        count += set.entryCount;
+    }
+    return count;
+}
+
+-(void)clearValues
+{
+    [self.dataSets removeAllObjects];
+    [self notifyDataChanged];
+}
+
 @end

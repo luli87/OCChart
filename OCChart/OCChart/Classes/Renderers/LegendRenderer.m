@@ -9,5 +9,11 @@
 #import "LegendRenderer.h"
 
 @implementation LegendRenderer
-
+-(id)init:(ViewPortHandler *)viewPortHandler legend:(Legend *)legend
+{
+    if (self = [super init:viewPortHandler]) {
+        self.legend = legend;
+    }
+    return self;
+}
 @end

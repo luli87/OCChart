@@ -9,5 +9,11 @@
 #import "Renderer.h"
 
 @implementation Renderer
-
+-(id)init:(ViewPortHandler *)viewPortHandler
+{
+    if (self = [super init]) {
+        self.viewPortHandler = viewPortHandler;
+    }
+    return self;
+}
 @end

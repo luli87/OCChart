@@ -7,7 +7,9 @@
 //
 
 #import "Renderer.h"
+#import "Legend.h"
 
 @interface LegendRenderer : Renderer
-
+@property (strong,nonatomic) Legend * legend;
+-(id)init:(ViewPortHandler *)viewPortHandler legend:(Legend *)legend;
 @end

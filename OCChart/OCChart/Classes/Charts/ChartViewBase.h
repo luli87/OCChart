@@ -17,13 +17,15 @@
 #import "ViewPortHandler.h"
 #import "Animator.h"
 #import "IMarker.h"
+#import "DefaultValueFormatter.h"
+#import "ChartUtils.h"
 
 @protocol ChartViewDelegate
 @end
 
-@interface ChartViewBase : UIView
+@interface ChartViewBase : UIView<AnimatorDelegate>
 @property (strong,nonatomic) XAxis * xAxis;
-@property (strong,nonatomic) id<IValueFormatter>  defaultValueFormatter;
+@property (strong,nonatomic) DefaultValueFormatter *defaultValueFormatter;
 @property (strong,nonatomic) ChartData * data;
 @property(assign,nonatomic)BOOL highlightPerTapEnabled;
 @property(assign,nonatomic)BOOL dragDecelerationEnabled;
@@ -41,7 +43,8 @@
 @property(nonatomic,strong)ViewPortHandler * viewPortHandler;
 @property(nonatomic,strong)Animator * animator;
 @property(assign,nonatomic)BOOL offsetsCalculated;
-@property(nonatomic,strong)NSArray<Highlight *> * indicesToHighlight;
+@property(nonatomic,strong)NSMutableArray<Highlight *> * indicesToHighlight;
+@property (strong,nonatomic) Highlight * lastHighlighted;
 @property(assign,nonatomic)BOOL drawMarkers;
 @property(weak,nonatomic)id<IMarker> marker;
 @property(assign,nonatomic)BOOL interceptTouchEvents;
@@ -49,8 +52,14 @@
 @property(nonatomic,assign)CGFloat extraRightOffset;
 @property(nonatomic,assign)CGFloat extraBottomOffset;
 @property(nonatomic,assign)CGFloat extraLeftOffset;
+@property(assign,nonatomic,readonly)BOOL isEmpty;
 
 -(void)initialize;
 -(void)setExtraOffsets:(CGFloat)left top:(CGFloat)top right:(CGFloat)right bottom:(CGFloat)bottom;
-
+-(void)notifyDataSetChanged;
+-(void)clear;
+-(void)clearValues;
+-(void)calculateOffsets;
+-(void)calcMinMax;
+-(void)setupDefaultFormatter:(double)min max:(double)max;
 @end

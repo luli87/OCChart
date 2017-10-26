@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Animator : NSObject
+@class Animator;
+@protocol AnimatorDelegate
+-(void)animatorUpdated:(Animator *)animator;
+-(void)animatorStopped:(Animator *)animator;
+@end
 
+@interface Animator : NSObject
+@property(weak,nonatomic)id<AnimatorDelegate> delegate;
+@property (strong,nonatomic) void(^updateBlock)(void);
+@property (strong,nonatomic) void(^stopBlock)(void);
 @end

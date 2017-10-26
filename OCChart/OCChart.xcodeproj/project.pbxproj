@@ -51,6 +51,11 @@
 		A1288A1E1FA05E090077BB62 /* LegendRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1288A1C1FA05E090077BB62 /* LegendRenderer.m */; };
 		A1288A211FA05F4A0077BB62 /* DataRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = A1288A1F1FA05F4A0077BB62 /* DataRenderer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1288A221FA05F4A0077BB62 /* DataRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1288A201FA05F4A0077BB62 /* DataRenderer.m */; };
+		A1288A2D1FA1BA970077BB62 /* DefaultValueFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = A1288A2B1FA1BA970077BB62 /* DefaultValueFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1288A2E1FA1BA970077BB62 /* DefaultValueFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = A1288A2C1FA1BA970077BB62 /* DefaultValueFormatter.m */; };
+		A1288A381FA1CFDF0077BB62 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1288A371FA1CFDE0077BB62 /* CoreGraphics.framework */; };
+		A1288A3E1FA1D5BA0077BB62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1288A3D1FA1D5B90077BB62 /* Foundation.framework */; };
+		A1288A491FA1DD1C0077BB62 /* ChartUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A1288A481FA1DD1C0077BB62 /* ChartUtils.m */; };
 		A137F59B1FA0C1FC0000D457 /* IHighlighter.h in Headers */ = {isa = PBXBuildFile; fileRef = A137F59A1FA0C1FC0000D457 /* IHighlighter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A137F59E1FA0C24C0000D457 /* Highlight.h in Headers */ = {isa = PBXBuildFile; fileRef = A137F59C1FA0C24C0000D457 /* Highlight.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A137F59F1FA0C24C0000D457 /* Highlight.m in Sources */ = {isa = PBXBuildFile; fileRef = A137F59D1FA0C24C0000D457 /* Highlight.m */; };
@@ -115,6 +120,12 @@
 		A1288A1C1FA05E090077BB62 /* LegendRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LegendRenderer.m; sourceTree = "<group>"; };
 		A1288A1F1FA05F4A0077BB62 /* DataRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataRenderer.h; sourceTree = "<group>"; };
 		A1288A201FA05F4A0077BB62 /* DataRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataRenderer.m; sourceTree = "<group>"; };
+		A1288A2B1FA1BA970077BB62 /* DefaultValueFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DefaultValueFormatter.h; sourceTree = "<group>"; };
+		A1288A2C1FA1BA970077BB62 /* DefaultValueFormatter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DefaultValueFormatter.m; sourceTree = "<group>"; };
+		A1288A371FA1CFDE0077BB62 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A1288A3D1FA1D5B90077BB62 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A1288A471FA1DD0C0077BB62 /* ChartUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartUtils.h; sourceTree = "<group>"; };
+		A1288A481FA1DD1C0077BB62 /* ChartUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartUtils.m; sourceTree = "<group>"; };
 		A137F59A1FA0C1FC0000D457 /* IHighlighter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IHighlighter.h; sourceTree = "<group>"; };
 		A137F59C1FA0C24C0000D457 /* Highlight.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Highlight.h; sourceTree = "<group>"; };
 		A137F59D1FA0C24C0000D457 /* Highlight.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Highlight.m; sourceTree = "<group>"; };
@@ -132,6 +143,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1288A3E1FA1D5BA0077BB62 /* Foundation.framework in Frameworks */,
+				A1288A381FA1CFDF0077BB62 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +173,8 @@
 			children = (
 				A12889BD1FA01F3A0077BB62 /* DefaultAxisValueFormatter.h */,
 				A12889BE1FA01F3A0077BB62 /* DefaultAxisValueFormatter.m */,
+				A1288A2B1FA1BA970077BB62 /* DefaultValueFormatter.h */,
+				A1288A2C1FA1BA970077BB62 /* DefaultValueFormatter.m */,
 				A12889BF1FA01F3A0077BB62 /* IAxisValueFormatter.h */,
 				A12889EE1FA02C4E0077BB62 /* IValueFormatter.h */,
 			);
@@ -268,6 +283,8 @@
 			children = (
 				A1288A071FA047050077BB62 /* ViewPortHandler.h */,
 				A1288A081FA047050077BB62 /* ViewPortHandler.m */,
+				A1288A471FA1DD0C0077BB62 /* ChartUtils.h */,
+				A1288A481FA1DD1C0077BB62 /* ChartUtils.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -283,6 +300,15 @@
 				A1288A0C1FA04C940077BB62 /* ChartData.m */,
 			);
 			path = Standard;
+			sourceTree = "<group>";
+		};
+		A1288A361FA1CFDE0077BB62 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A1288A3D1FA1D5B90077BB62 /* Foundation.framework */,
+				A1288A371FA1CFDE0077BB62 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A137F5991FA0C17C0000D457 /* Highlight */ = {
@@ -301,6 +327,7 @@
 				A1D5C50B1F9F6BA0006C309E /* OCChart */,
 				A1D5C5161F9F6BA1006C309E /* OCChartTests */,
 				A1D5C50A1F9F6BA0006C309E /* Products */,
+				A1288A361FA1CFDE0077BB62 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -392,6 +419,7 @@
 				A12889E41FA01F3B0077BB62 /* ChartAnimationEasing.h in Headers */,
 				A12889D71FA01F3B0077BB62 /* IAxisValueFormatter.h in Headers */,
 				A12889EC1FA021BF0077BB62 /* YAxis.h in Headers */,
+				A1288A2D1FA1BA970077BB62 /* DefaultValueFormatter.h in Headers */,
 				A12889E01FA01F3B0077BB62 /* ChartViewBase.h in Headers */,
 				A1A92AFD1F9F6FCC009EDF51 /* OCChart.h in Headers */,
 			);
@@ -504,12 +532,14 @@
 				A1288A161FA05BDE0077BB62 /* Legend.m in Sources */,
 				A12889DD1FA01F3B0077BB62 /* ComponentBase.m in Sources */,
 				A12889FD1FA02E910077BB62 /* ChartBaseDataSet.m in Sources */,
+				A1288A2E1FA1BA970077BB62 /* DefaultValueFormatter.m in Sources */,
 				A12889E11FA01F3B0077BB62 /* ChartViewBase.m in Sources */,
 				A12889ED1FA021BF0077BB62 /* YAxis.m in Sources */,
 				A1288A0E1FA04C940077BB62 /* ChartData.m in Sources */,
 				A1288A061FA044870077BB62 /* ChartDataEntry.m in Sources */,
 				A1288A021FA043170077BB62 /* ChartDataEntryBase.m in Sources */,
 				A12889E51FA020B90077BB62 /* AxisBase.m in Sources */,
+				A1288A491FA1DD1C0077BB62 /* ChartUtils.m in Sources */,
 				A12889DB1FA01F3B0077BB62 /* ChartLimitLine.m in Sources */,
 				A12889E31FA01F3B0077BB62 /* Animator.m in Sources */,
 				A1288A121FA05B8A0077BB62 /* Description.m in Sources */,

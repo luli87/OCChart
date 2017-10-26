@@ -19,10 +19,12 @@
 @property(assign,nonatomic)double leftAxisMin;
 @property(assign,nonatomic)double rightAxisMax;
 @property(assign,nonatomic)double rightAxisMin;
-@property (strong,nonatomic) NSArray<id<IChartDataSet>> * dataSets;
+@property(assign,nonatomic,readonly)int entryCount;
+@property (strong,nonatomic)NSMutableArray<id<IChartDataSet>> * dataSets;
 -(void)notifyDataChanged;
 -(void)calcMinMaxY:(double)fromeY to:(double)toY;
 -(void)calcMinMax;
 -(void)calcMinMax:(ChartDataEntry *)entry axis:(AxisDependency)axis;
 -(void)calcMinMax:(id<IChartDataSet>)dataSet;
+-(void)clearValues;
 @end

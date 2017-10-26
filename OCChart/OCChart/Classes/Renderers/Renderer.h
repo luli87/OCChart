@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "ViewPortHandler.h"
 @interface Renderer : NSObject
-
+@property (strong,nonatomic) ViewPortHandler * viewPortHandler;
+-(id)init:(ViewPortHandler *)viewPortHandler;
 @end
