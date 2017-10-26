@@ -10,4 +10,16 @@
 
 @implementation Description
 
+-(id)init
+{
+    if (self = [super init]) {
+        self.text = @"描述lalbel";
+        self.position = CGPointZero;
+        self.textAlign = NSTextAlignmentRight;
+        self.font = [UIFont systemFontOfSize:12];
+        self.textColor = [UIColor blackColor];
+    }
+    return self;
+}
+
 @end

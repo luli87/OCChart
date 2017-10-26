@@ -9,5 +9,9 @@
 #import "ComponentBase.h"
 
 @interface Description : ComponentBase
-
+@property (strong,nonatomic) NSString * text;
+@property(assign,nonatomic)CGPoint position;
+@property(assign,nonatomic)NSTextAlignment textAlign;
+@property (strong,nonatomic) UIFont * font;
+@property (strong,nonatomic) UIColor * textColor;
 @end

@@ -47,11 +47,25 @@ void drawMultilineTextSize(CGContextRef context,NSString *text,CGSize knownTextS
         CGPoint translate = point;
         if (anchor.x != 0.5 || anchor.y != 0.5) {
             CGSize rotatedSize = sizeOfRotatedRectangle(size, angleRadians);
+            translate.x -= rotatedSize.width * (anchor.x - 0.5);
+            translate.y -= rotatedSize.height * (anchor.y - 0.5);
         }
+        CGContextSaveGState(context);
+        CGContextTranslateCTM(context, translate.x, translate.y);
+        CGContextRotateCTM(context, angleRadians);
+        [text drawWithRect:rect options:NSStringDrawingUsesLineFragmentOrigin | NSStringDrawingUsesFontLeading attributes:attributes context:nil];
+        CGContextRestoreGState(context);
     } else {
         
     }
+    UIGraphicsPopContext();
 }
+
+void drawText(CGContextRef context,NSString *text,CGPoint point,NSTextAlignment align,NSDictionary *attributes)
+{
+    
+}
+
 CGSize sizeOfRotatedRectangle(CGSize size,CGFloat radians)
 {
     return sizeOfRotatedRectangleWH(size.width, size.height, radians);

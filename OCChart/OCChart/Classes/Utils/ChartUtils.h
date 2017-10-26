@@ -17,6 +17,7 @@ int decimals(double number);
 double roundToNextSignificant(double number);
 void drawMultilineText(CGContextRef context,NSString *text,CGPoint point,NSDictionary *attributes,CGSize constrainedToSize,CGPoint anchor,CGFloat angleRadians);
 void drawMultilineTextSize(CGContextRef context,NSString *text,CGSize knownTextSize,CGPoint point,NSDictionary *attributes,CGSize constrainedToSize,CGPoint anchor,CGFloat angleRadians);
+void drawText(CGContextRef context,NSString *text,CGPoint point,NSTextAlignment align,NSDictionary *attributes);
 CGSize sizeOfRotatedRectangle(CGSize size,CGFloat radians);
 CGSize sizeOfRotatedRectangleWH(CGFloat rectangleWidth,CGFloat rectangleHeight,CGFloat radians);
 #endif /* ChartUtils_h */
