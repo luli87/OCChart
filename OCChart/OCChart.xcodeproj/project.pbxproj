@@ -63,6 +63,15 @@
 		A1A92AFD1F9F6FCC009EDF51 /* OCChart.h in Headers */ = {isa = PBXBuildFile; fileRef = A1D5C5301F9F6CC2006C309E /* OCChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1D5C5131F9F6BA1006C309E /* OCChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1D5C5091F9F6BA0006C309E /* OCChart.framework */; };
 		A1D5C5181F9F6BA1006C309E /* OCChartTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A1D5C5171F9F6BA1006C309E /* OCChartTests.m */; };
+		A1F381D61FA72440001EC33D /* ChartUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = A1288A471FA1DD0C0077BB62 /* ChartUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1F381D91FA72667001EC33D /* AxisRendererBase.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F381D71FA72667001EC33D /* AxisRendererBase.h */; };
+		A1F381DA1FA72667001EC33D /* AxisRendererBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F381D81FA72667001EC33D /* AxisRendererBase.m */; };
+		A1F381DD1FA7267B001EC33D /* YAxisRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F381DB1FA7267B001EC33D /* YAxisRenderer.h */; };
+		A1F381DE1FA7267B001EC33D /* YAxisRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F381DC1FA7267B001EC33D /* YAxisRenderer.m */; };
+		A1F381E11FA726D4001EC33D /* Transformer.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F381DF1FA726D4001EC33D /* Transformer.h */; };
+		A1F381E21FA726D4001EC33D /* Transformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F381E01FA726D4001EC33D /* Transformer.m */; };
+		A1F381E51FA72718001EC33D /* XAxisRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F381E31FA72718001EC33D /* XAxisRenderer.h */; };
+		A1F381E61FA72718001EC33D /* XAxisRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F381E41FA72718001EC33D /* XAxisRenderer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +145,15 @@
 		A1D5C5191F9F6BA1006C309E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1D5C52F1F9F6CC2006C309E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1D5C5301F9F6CC2006C309E /* OCChart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCChart.h; sourceTree = "<group>"; };
+		A1F381D71FA72667001EC33D /* AxisRendererBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AxisRendererBase.h; sourceTree = "<group>"; };
+		A1F381D81FA72667001EC33D /* AxisRendererBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AxisRendererBase.m; sourceTree = "<group>"; };
+		A1F381DB1FA7267B001EC33D /* YAxisRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YAxisRenderer.h; sourceTree = "<group>"; };
+		A1F381DC1FA7267B001EC33D /* YAxisRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAxisRenderer.m; sourceTree = "<group>"; };
+		A1F381DF1FA726D4001EC33D /* Transformer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Transformer.h; sourceTree = "<group>"; };
+		A1F381E01FA726D4001EC33D /* Transformer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Transformer.m; sourceTree = "<group>"; };
+		A1F381E31FA72718001EC33D /* XAxisRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XAxisRenderer.h; sourceTree = "<group>"; };
+		A1F381E41FA72718001EC33D /* XAxisRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XAxisRenderer.m; sourceTree = "<group>"; };
+		A1F381E71FA7277A001EC33D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -274,6 +292,12 @@
 				A1288A1C1FA05E090077BB62 /* LegendRenderer.m */,
 				A1288A1F1FA05F4A0077BB62 /* DataRenderer.h */,
 				A1288A201FA05F4A0077BB62 /* DataRenderer.m */,
+				A1F381D71FA72667001EC33D /* AxisRendererBase.h */,
+				A1F381D81FA72667001EC33D /* AxisRendererBase.m */,
+				A1F381DB1FA7267B001EC33D /* YAxisRenderer.h */,
+				A1F381DC1FA7267B001EC33D /* YAxisRenderer.m */,
+				A1F381E31FA72718001EC33D /* XAxisRenderer.h */,
+				A1F381E41FA72718001EC33D /* XAxisRenderer.m */,
 			);
 			path = Renderers;
 			sourceTree = "<group>";
@@ -285,6 +309,8 @@
 				A1288A081FA047050077BB62 /* ViewPortHandler.m */,
 				A1288A471FA1DD0C0077BB62 /* ChartUtils.h */,
 				A1288A481FA1DD1C0077BB62 /* ChartUtils.m */,
+				A1F381DF1FA726D4001EC33D /* Transformer.h */,
+				A1F381E01FA726D4001EC33D /* Transformer.m */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -380,6 +406,7 @@
 			isa = PBXGroup;
 			children = (
 				A1D5C52F1F9F6CC2006C309E /* Info.plist */,
+				A1F381E71FA7277A001EC33D /* PrefixHeader.pch */,
 				A1D5C5301F9F6CC2006C309E /* OCChart.h */,
 			);
 			path = "Support File";
@@ -402,25 +429,30 @@
 				A12889D51FA01F3B0077BB62 /* DefaultAxisValueFormatter.h in Headers */,
 				A12889F91FA02E7A0077BB62 /* IChartDataSet.h in Headers */,
 				A12889E81FA021B00077BB62 /* XAxis.h in Headers */,
+				A1F381E11FA726D4001EC33D /* Transformer.h in Headers */,
 				A12889E21FA01F3B0077BB62 /* Animator.h in Headers */,
 				A1288A151FA05BDE0077BB62 /* Legend.h in Headers */,
 				A1288A051FA044870077BB62 /* ChartDataEntry.h in Headers */,
 				A12889DE1FA01F3B0077BB62 /* BarLineChartViewBase.h in Headers */,
 				A1288A111FA05B8A0077BB62 /* Description.h in Headers */,
+				A1F381D91FA72667001EC33D /* AxisRendererBase.h in Headers */,
 				A12889D31FA01F3B0077BB62 /* BarLineScatterCandleBubbleChartDataProvider.h in Headers */,
 				A12889D41FA01F3B0077BB62 /* ChartDataProvider.h in Headers */,
 				A12889DA1FA01F3B0077BB62 /* ChartLimitLine.h in Headers */,
 				A137F5A11FA0C50D0000D457 /* IMarker.h in Headers */,
+				A1F381E51FA72718001EC33D /* XAxisRenderer.h in Headers */,
 				A137F59E1FA0C24C0000D457 /* Highlight.h in Headers */,
 				A1288A211FA05F4A0077BB62 /* DataRenderer.h in Headers */,
 				A1288A1D1FA05E090077BB62 /* LegendRenderer.h in Headers */,
 				A1288A191FA05DFA0077BB62 /* Renderer.h in Headers */,
 				A137F59B1FA0C1FC0000D457 /* IHighlighter.h in Headers */,
+				A1F381DD1FA7267B001EC33D /* YAxisRenderer.h in Headers */,
 				A12889E41FA01F3B0077BB62 /* ChartAnimationEasing.h in Headers */,
 				A12889D71FA01F3B0077BB62 /* IAxisValueFormatter.h in Headers */,
 				A12889EC1FA021BF0077BB62 /* YAxis.h in Headers */,
 				A1288A2D1FA1BA970077BB62 /* DefaultValueFormatter.h in Headers */,
 				A12889E01FA01F3B0077BB62 /* ChartViewBase.h in Headers */,
+				A1F381D61FA72440001EC33D /* ChartUtils.h in Headers */,
 				A1A92AFD1F9F6FCC009EDF51 /* OCChart.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,6 +555,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F381E21FA726D4001EC33D /* Transformer.m in Sources */,
 				A1288A221FA05F4A0077BB62 /* DataRenderer.m in Sources */,
 				A1288A1A1FA05DFA0077BB62 /* Renderer.m in Sources */,
 				A137F59F1FA0C24C0000D457 /* Highlight.m in Sources */,
@@ -530,7 +563,10 @@
 				A12889D61FA01F3B0077BB62 /* DefaultAxisValueFormatter.m in Sources */,
 				A1288A1E1FA05E090077BB62 /* LegendRenderer.m in Sources */,
 				A1288A161FA05BDE0077BB62 /* Legend.m in Sources */,
+				A1F381DE1FA7267B001EC33D /* YAxisRenderer.m in Sources */,
 				A12889DD1FA01F3B0077BB62 /* ComponentBase.m in Sources */,
+				A1F381E61FA72718001EC33D /* XAxisRenderer.m in Sources */,
+				A1F381DA1FA72667001EC33D /* AxisRendererBase.m in Sources */,
 				A12889FD1FA02E910077BB62 /* ChartBaseDataSet.m in Sources */,
 				A1288A2E1FA1BA970077BB62 /* DefaultValueFormatter.m in Sources */,
 				A12889E11FA01F3B0077BB62 /* ChartViewBase.m in Sources */,
@@ -686,6 +722,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OCChart/Support File/PrefixHeader.pch";
 				INFOPLIST_FILE = "OCChart/Support File/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -706,6 +744,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/OCChart/Support File/PrefixHeader.pch";
 				INFOPLIST_FILE = "OCChart/Support File/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

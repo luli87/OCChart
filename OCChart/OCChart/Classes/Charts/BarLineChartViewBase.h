@@ -7,6 +7,9 @@
 //
 #import "ChartViewBase.h"
 #import "BarLineScatterCandleBubbleChartDataProvider.h"
+#import "YAxisRenderer.h"
+#import "XAxisRenderer.h"
+#import "Transformer.h"
 
 @interface BarLineChartViewBase : ChartViewBase<BarLineScatterCandleBubbleChartDataProvider,UIGestureRecognizerDelegate>
 @property(nonatomic,assign)int maxVisibleCount;
@@ -24,6 +27,14 @@
 @property(nonatomic,assign)BOOL clipValuesToContentEnabled;
 @property(nonatomic,assign)CGFloat minOffset;
 @property(nonatomic,assign)BOOL keepPositionOnRotation;
+@property (strong,nonatomic) YAxis * leftAxis;
+@property (strong,nonatomic) YAxis * rightAxis;
+@property (strong,nonatomic) YAxisRenderer * leftYAxisRenderer;
+@property (strong,nonatomic) YAxisRenderer * rightYAxisRenderer;
 
+@property (strong,nonatomic) XAxisRenderer * xAxisRenderer;
+
+@property (strong,nonatomic) Transformer * leftAxisTransformer;
+@property (strong,nonatomic) Transformer * rightAxisTransformer;
 
 @end

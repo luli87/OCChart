@@ -149,6 +149,7 @@
         if (CGPointEqualToPoint(CGPointZero, position)) {
             position = CGPointMake(self.bounds.size.width - self.viewPortHandler.offsetRight - self.chartDescription.xOffset, self.bounds.size.height - self.viewPortHandler.offsetBottom - self.chartDescription.yOffset - self.chartDescription.font.lineHeight);
         }
+        drawText(context, self.chartDescription.text, position, self.chartDescription.textAlign, @{NSFontAttributeName:self.chartDescription.font,NSForegroundColorAttributeName:self.chartDescription.textColor});
         
     }
 }
