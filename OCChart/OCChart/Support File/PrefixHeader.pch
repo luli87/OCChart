@@ -13,10 +13,16 @@
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
 
 #endif /* PrefixHeader_pch */
+#include <TargetConditionals.h>
 
-//#if (os(iOS) || os(tvOS))
-//#endif
+#if TARGET_OS_IPHONE
+#import <UIKit/UIKit.h>
+typedef UIFont NSUIFont;
+typedef  UITapGestureRecognizer NSUITapGestureRecognizer;
+#endif
 
-//#if os(OSX)
-//#endif
+#if TARGET_OS_OSX
+typedef NSFont NSUIFont;
+typedef  NSClickGestureRecognizer NSUITapGestureRecognizer;
+#endif
 

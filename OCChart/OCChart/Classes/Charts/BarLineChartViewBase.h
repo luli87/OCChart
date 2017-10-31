@@ -36,5 +36,10 @@
 
 @property (strong,nonatomic) Transformer * leftAxisTransformer;
 @property (strong,nonatomic) Transformer * rightAxisTransformer;
+@property (strong,nonatomic) NSUITapGestureRecognizer * tapGestureRecognizer;
+@property(assign,nonatomic)BOOL customViewPortEnabled;
+
+@property(assign,nonatomic)double lowestVisibleX;
+@property(assign,nonatomic)double highestVisibleX;
 
 @end

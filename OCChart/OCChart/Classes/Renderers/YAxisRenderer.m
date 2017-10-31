@@ -10,4 +10,12 @@
 
 @implementation YAxisRenderer
 
+-(id)init:(ViewPortHandler *)viewPortHandler yAxis:(YAxis *)yAxis transformer:(Transformer *)Transformer
+{
+    if (self = [super init:viewPortHandler axis:yAxis transformer:Transformer]) {
+        
+    }
+    return self;
+}
+
 @end

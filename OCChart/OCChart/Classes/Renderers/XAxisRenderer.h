@@ -9,5 +9,8 @@
 #import "AxisRendererBase.h"
 
 @interface XAxisRenderer : AxisRendererBase
+{
+    NSArray *_axisLineSegmentsBuffer;
+}
 
 @end

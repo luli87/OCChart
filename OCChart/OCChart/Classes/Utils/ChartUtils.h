@@ -20,4 +20,5 @@ void drawMultilineTextSize(CGContextRef context,NSString *text,CGSize knownTextS
 void drawText(CGContextRef context,NSString *text,CGPoint point,NSTextAlignment align,NSDictionary *attributes);
 CGSize sizeOfRotatedRectangle(CGSize size,CGFloat radians);
 CGSize sizeOfRotatedRectangleWH(CGFloat rectangleWidth,CGFloat rectangleHeight,CGFloat radians);
+double nextUp(double number);
 #endif /* ChartUtils_h */

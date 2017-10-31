@@ -76,3 +76,12 @@ CGSize sizeOfRotatedRectangleWH(CGFloat rectangleWidth,CGFloat rectangleHeight,C
     CGSize size = CGSizeMake(fabs(rectangleWidth * cos(radians)) + fabs(rectangleHeight * sin(radians)), fabs(rectangleWidth * sin(radians)) + fabs(rectangleHeight * cos(radians)));
     return size;
 }
+
+double nextUp(double number)
+{
+    if (isinf(number) || isnan(number)) {
+        return number;
+    } else {
+        return number + DBL_EPSILON;
+    }
+}

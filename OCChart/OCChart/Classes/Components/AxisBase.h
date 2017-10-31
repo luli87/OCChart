@@ -32,8 +32,8 @@
 @property(nonatomic,strong)NSMutableArray<ChartLimitLine *> * limitLines;
 @property(nonatomic,assign)BOOL drawLimitLinesBehindDataEnabled;
 @property(nonatomic,assign)BOOL gridAntialiasEnabled;
-@property(nonatomic,strong)NSArray<NSNumber *> * entries;
-@property(nonatomic,strong)NSArray<NSNumber *> * centeredEntries;
+@property(nonatomic,strong)NSMutableArray<NSNumber *> * entries;
+@property(nonatomic,strong)NSMutableArray<NSNumber *> * centeredEntries;
 @property(nonatomic,assign)int entryCount;
 @property(nonatomic,assign)int labelCount;
 @property(nonatomic,assign)int decimals;

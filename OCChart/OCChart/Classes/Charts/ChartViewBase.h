@@ -62,4 +62,5 @@
 -(void)calculateOffsets;
 -(void)calcMinMax;
 -(void)setupDefaultFormatter:(double)min max:(double)max;
+-(void)drawRect:(CGRect)rect;
 @end

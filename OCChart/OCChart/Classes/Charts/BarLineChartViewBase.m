@@ -27,4 +27,109 @@
     return self;
 }
 
+-(void)initialize
+{
+    [super initialize];
+    self.leftAxis = [[YAxis alloc] initPosition:left];
+    self.rightAxis = [[YAxis alloc] initPosition:right];
+    self.leftAxisTransformer = [[Transformer alloc] initViewPortHandler:self.viewPortHandler];
+    self.rightAxisTransformer = [[Transformer alloc] initViewPortHandler:self.viewPortHandler];
+    self.leftYAxisRenderer = [[YAxisRenderer alloc] init:self.viewPortHandler axis:self.leftAxis transformer:self.leftAxisTransformer];
+    self.rightYAxisRenderer = [[YAxisRenderer alloc] init:self.viewPortHandler axis:self.rightAxis transformer:self.rightAxisTransformer];
+    self.xAxisRenderer = [[XAxisRenderer alloc] init:self.viewPortHandler axis:self.leftAxis transformer:self.leftAxisTransformer];
+}
+
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
+{
+    CGPoint oldPoint = CGPointZero;
+    if (self.keepPositionOnRotation && ([keyPath isEqualToString:@"bounds"] || [keyPath isEqualToString:@"frame"])) {
+        oldPoint = self.viewPortHandler.contentRect.origin;
+        [[self getTransformer:left] pixelToValues:&oldPoint];
+    }
+
+    [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+    CGPoint newPoint = CGPointMake(oldPoint.x, oldPoint.y);
+    if (self.keepPositionOnRotation) {
+        [[self getTransformer:left] pixelToValues:&newPoint];
+        [self.viewPortHandler centerViewPort:newPoint chart:self];
+    } else {
+        [self.viewPortHandler refresh:self.viewPortHandler.touchMatrix chart:self invalidate:YES];
+    }
+}
+
+-(Transformer *)getTransformer:(AxisDependency)axis
+{
+    if (axis == left) {
+        return self.leftAxisTransformer;
+    } else {
+        return self.rightAxisTransformer;
+    }
+}
+
+-(void)drawRect:(CGRect)rect
+{
+    [super drawRect:rect];
+    if (!self.data) {
+        return;
+    }
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    if (!context) {
+        return;
+    }
+    [self drawGridBackground:context];
+    if (self.autoScaleMinMaxEnabled) {
+        [self autoScale];
+    }
+    if (self.leftAxis.enabled) {
+        [self.leftYAxisRenderer computeAxis:self.leftAxis.axisMiniMum max:self.leftAxis.axisMaxiMum inverted:self.leftAxis.inverted];
+    }
+    if (self.rightAxis.enabled) {
+        [self.rightYAxisRenderer computeAxis:self.rightAxis.axisMiniMum max:self.rightAxis.axisMaxiMum inverted:self.rightAxis.inverted];
+    }
+    if (self.xAxis.enabled) {
+        [self.xAxisRenderer computeAxis:self.xAxis.axisMiniMum max:self.xAxis.axisMaxiMum inverted:NO];
+    }
+}
+
+-(void)drawGridBackground:(CGContextRef)context
+{
+    if (self.drawGridBackgroundEnabled || self.drawBordersEnabled) {
+        CGContextSaveGState(context);
+    }
+    if (self.drawGridBackgroundEnabled) {
+        CGContextSetFillColorWithColor(context, self.gridBackgroundColor.CGColor);
+        CGContextFillRect(context, self.viewPortHandler.contentRect);
+    }
+    if (self.drawBordersEnabled) {
+        CGContextSetLineWidth(context, self.borderLineWidth);
+        CGContextSetStrokeColorWithColor(context, self.borderColor.CGColor);
+        CGContextStrokeRect(context, self.viewPortHandler.contentRect);
+    }
+    if (self.drawGridBackgroundEnabled || self.drawBordersEnabled) {
+        CGContextRestoreGState(context);
+    }
+}
+
+-(void)autoScale
+{
+    if (!self.data) {
+        return;
+    }
+    [self.data calcMinMaxY:self.lowestVisibleX to:self.highestVisibleX];
+}
+
+-(CGFloat)lowestVisibleX
+{
+    CGPoint pt = CGPointMake(self.viewPortHandler.contentLeft, self.viewPortHandler.contentBottom);
+    [[self getTransformer:left] pixelToValues:&pt];
+    return MAX(self.xAxis.axisMiniMum, pt.x);
+}
+
+-(CGFloat)highestVisibleX
+{
+    CGPoint pt = CGPointMake(self.viewPortHandler.contentRight, self.viewPortHandler.contentBottom);
+    [[self getTransformer:left] pixelToValues:&pt];
+    return MAX(self.xAxis.axisMaxiMum, pt.x);
+}
+
 @end

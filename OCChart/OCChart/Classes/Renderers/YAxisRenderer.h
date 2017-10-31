@@ -7,7 +7,8 @@
 //
 
 #import "AxisRendererBase.h"
-
 @interface YAxisRenderer : AxisRendererBase
+
+-(id)init:(ViewPortHandler *)viewPortHandler yAxis:(YAxis *)yAxis transformer:(Transformer *)Transformer;
 
 @end
