@@ -16,6 +16,8 @@
 
 @interface Animator : NSObject
 @property(weak,nonatomic)id<AnimatorDelegate> delegate;
+@property(assign,nonatomic)double phaseX;
+@property(assign,nonatomic)double phaseY;
 @property (strong,nonatomic) void(^updateBlock)(void);
 @property (strong,nonatomic) void(^stopBlock)(void);
 @end

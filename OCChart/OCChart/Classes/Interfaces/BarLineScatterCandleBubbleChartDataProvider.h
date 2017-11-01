@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "ChartDataProvider.h"
-
+@class Transformer;
 @protocol BarLineScatterCandleBubbleChartDataProvider <ChartDataProvider>
-
+@property(assign,nonatomic)double lowestVisibleX;
+@property(assign,nonatomic)double highestVisibleX;
+-(Transformer *)getTransformer:(AxisDependency)forAxis;
+-(BOOL)isInverted:(AxisDependency)axis;
 @end

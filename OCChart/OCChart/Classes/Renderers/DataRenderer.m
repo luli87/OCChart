@@ -10,4 +10,32 @@
 
 @implementation DataRenderer
 
+-(id)init:(Animator *)animator viewPortHandler:(ViewPortHandler *)viewPortHandler
+{
+    if (self = [super init:viewPortHandler]) {
+        self.animator = animator;
+    }
+    return self;
+}
+
+-(void)drawData:(CGContextRef)context
+{
+    
+}
+
+-(void)drawValues:(CGContextRef)context
+{
+    
+}
+
+-(void)drawExtras:(CGContextRef)context
+{
+    
+}
+
+-(void)drawHighlighted:(CGContextRef)context indices:(NSMutableArray<Highlight *>*)indices
+{
+    
+}
+
 @end

@@ -23,6 +23,11 @@
     
 }
 
+-(void)renderLimitLines:(CGContextRef)context
+{
+    
+}
+
 -(void)computeAxis:(double)min max:(double)max inverted:(BOOL)inverted
 {
     if (self.transformer && self.viewPortHandler) {

@@ -72,6 +72,19 @@
 		A1F381E21FA726D4001EC33D /* Transformer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F381E01FA726D4001EC33D /* Transformer.m */; };
 		A1F381E51FA72718001EC33D /* XAxisRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F381E31FA72718001EC33D /* XAxisRenderer.h */; };
 		A1F381E61FA72718001EC33D /* XAxisRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F381E41FA72718001EC33D /* XAxisRenderer.m */; };
+		A1F381EA1FA876B6001EC33D /* BarChartRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F381E81FA876B6001EC33D /* BarChartRenderer.h */; };
+		A1F381EB1FA876B6001EC33D /* BarChartRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F381E91FA876B6001EC33D /* BarChartRenderer.m */; };
+		A1F381EE1FA876D1001EC33D /* BarLineScatterCandleBubbleRenderer.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F381EC1FA876D1001EC33D /* BarLineScatterCandleBubbleRenderer.h */; };
+		A1F381EF1FA876D1001EC33D /* BarLineScatterCandleBubbleRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F381ED1FA876D1001EC33D /* BarLineScatterCandleBubbleRenderer.m */; };
+		A1F381F11FA8775F001EC33D /* BarChartDataProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F381F01FA8775E001EC33D /* BarChartDataProvider.h */; };
+		A1F381F41FA8782D001EC33D /* BarLineScatterCandleBubbleChartData.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F381F21FA8782D001EC33D /* BarLineScatterCandleBubbleChartData.h */; };
+		A1F381F51FA8782D001EC33D /* BarLineScatterCandleBubbleChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F381F31FA8782D001EC33D /* BarLineScatterCandleBubbleChartData.m */; };
+		A1F381F81FA8783E001EC33D /* BarChartData.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F381F61FA8783E001EC33D /* BarChartData.h */; };
+		A1F381F91FA8783E001EC33D /* BarChartData.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F381F71FA8783E001EC33D /* BarChartData.m */; };
+		A1F381FB1FA87D01001EC33D /* IBarLineScatterCandleBubbleChartDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F381FA1FA87D01001EC33D /* IBarLineScatterCandleBubbleChartDataSet.h */; };
+		A1F381FD1FA87D6D001EC33D /* IBarChartDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F381FC1FA87D6D001EC33D /* IBarChartDataSet.h */; };
+		A1F382041FA96249001EC33D /* ChartDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F382021FA96249001EC33D /* ChartDataSet.h */; };
+		A1F382051FA96249001EC33D /* ChartDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F382031FA96249001EC33D /* ChartDataSet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +167,19 @@
 		A1F381E31FA72718001EC33D /* XAxisRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XAxisRenderer.h; sourceTree = "<group>"; };
 		A1F381E41FA72718001EC33D /* XAxisRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XAxisRenderer.m; sourceTree = "<group>"; };
 		A1F381E71FA7277A001EC33D /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		A1F381E81FA876B6001EC33D /* BarChartRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarChartRenderer.h; sourceTree = "<group>"; };
+		A1F381E91FA876B6001EC33D /* BarChartRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarChartRenderer.m; sourceTree = "<group>"; };
+		A1F381EC1FA876D1001EC33D /* BarLineScatterCandleBubbleRenderer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarLineScatterCandleBubbleRenderer.h; sourceTree = "<group>"; };
+		A1F381ED1FA876D1001EC33D /* BarLineScatterCandleBubbleRenderer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarLineScatterCandleBubbleRenderer.m; sourceTree = "<group>"; };
+		A1F381F01FA8775E001EC33D /* BarChartDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarChartDataProvider.h; sourceTree = "<group>"; };
+		A1F381F21FA8782D001EC33D /* BarLineScatterCandleBubbleChartData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarLineScatterCandleBubbleChartData.h; sourceTree = "<group>"; };
+		A1F381F31FA8782D001EC33D /* BarLineScatterCandleBubbleChartData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarLineScatterCandleBubbleChartData.m; sourceTree = "<group>"; };
+		A1F381F61FA8783E001EC33D /* BarChartData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarChartData.h; sourceTree = "<group>"; };
+		A1F381F71FA8783E001EC33D /* BarChartData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarChartData.m; sourceTree = "<group>"; };
+		A1F381FA1FA87D01001EC33D /* IBarLineScatterCandleBubbleChartDataSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBarLineScatterCandleBubbleChartDataSet.h; sourceTree = "<group>"; };
+		A1F381FC1FA87D6D001EC33D /* IBarChartDataSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBarChartDataSet.h; sourceTree = "<group>"; };
+		A1F382021FA96249001EC33D /* ChartDataSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartDataSet.h; sourceTree = "<group>"; };
+		A1F382031FA96249001EC33D /* ChartDataSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartDataSet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +208,7 @@
 			children = (
 				A12889B81FA01F390077BB62 /* BarLineScatterCandleBubbleChartDataProvider.h */,
 				A12889B91FA01F390077BB62 /* ChartDataProvider.h */,
+				A1F381F01FA8775E001EC33D /* BarChartDataProvider.h */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -265,6 +292,8 @@
 			isa = PBXGroup;
 			children = (
 				A12889F81FA02E7A0077BB62 /* IChartDataSet.h */,
+				A1F381FA1FA87D01001EC33D /* IBarLineScatterCandleBubbleChartDataSet.h */,
+				A1F381FC1FA87D6D001EC33D /* IBarChartDataSet.h */,
 			);
 			path = Interfaces;
 			sourceTree = "<group>";
@@ -298,6 +327,10 @@
 				A1F381DC1FA7267B001EC33D /* YAxisRenderer.m */,
 				A1F381E31FA72718001EC33D /* XAxisRenderer.h */,
 				A1F381E41FA72718001EC33D /* XAxisRenderer.m */,
+				A1F381EC1FA876D1001EC33D /* BarLineScatterCandleBubbleRenderer.h */,
+				A1F381ED1FA876D1001EC33D /* BarLineScatterCandleBubbleRenderer.m */,
+				A1F381E81FA876B6001EC33D /* BarChartRenderer.h */,
+				A1F381E91FA876B6001EC33D /* BarChartRenderer.m */,
 			);
 			path = Renderers;
 			sourceTree = "<group>";
@@ -320,10 +353,16 @@
 			children = (
 				A12889FF1FA043170077BB62 /* ChartDataEntryBase.h */,
 				A1288A001FA043170077BB62 /* ChartDataEntryBase.m */,
+				A1F382021FA96249001EC33D /* ChartDataSet.h */,
+				A1F382031FA96249001EC33D /* ChartDataSet.m */,
 				A1288A031FA044870077BB62 /* ChartDataEntry.h */,
 				A1288A041FA044870077BB62 /* ChartDataEntry.m */,
 				A1288A0B1FA04C940077BB62 /* ChartData.h */,
 				A1288A0C1FA04C940077BB62 /* ChartData.m */,
+				A1F381F21FA8782D001EC33D /* BarLineScatterCandleBubbleChartData.h */,
+				A1F381F31FA8782D001EC33D /* BarLineScatterCandleBubbleChartData.m */,
+				A1F381F61FA8783E001EC33D /* BarChartData.h */,
+				A1F381F71FA8783E001EC33D /* BarChartData.m */,
 			);
 			path = Standard;
 			sourceTree = "<group>";
@@ -421,15 +460,19 @@
 			files = (
 				A12889D81FA01F3B0077BB62 /* AxisBase.h in Headers */,
 				A1288A091FA047050077BB62 /* ViewPortHandler.h in Headers */,
+				A1F381F11FA8775F001EC33D /* BarChartDataProvider.h in Headers */,
 				A1288A0D1FA04C940077BB62 /* ChartData.h in Headers */,
 				A12889FC1FA02E910077BB62 /* ChartBaseDataSet.h in Headers */,
 				A1288A011FA043170077BB62 /* ChartDataEntryBase.h in Headers */,
 				A12889DC1FA01F3B0077BB62 /* ComponentBase.h in Headers */,
 				A12889EF1FA02C4E0077BB62 /* IValueFormatter.h in Headers */,
+				A1F381FB1FA87D01001EC33D /* IBarLineScatterCandleBubbleChartDataSet.h in Headers */,
 				A12889D51FA01F3B0077BB62 /* DefaultAxisValueFormatter.h in Headers */,
 				A12889F91FA02E7A0077BB62 /* IChartDataSet.h in Headers */,
 				A12889E81FA021B00077BB62 /* XAxis.h in Headers */,
+				A1F381EA1FA876B6001EC33D /* BarChartRenderer.h in Headers */,
 				A1F381E11FA726D4001EC33D /* Transformer.h in Headers */,
+				A1F381F81FA8783E001EC33D /* BarChartData.h in Headers */,
 				A12889E21FA01F3B0077BB62 /* Animator.h in Headers */,
 				A1288A151FA05BDE0077BB62 /* Legend.h in Headers */,
 				A1288A051FA044870077BB62 /* ChartDataEntry.h in Headers */,
@@ -437,19 +480,23 @@
 				A1288A111FA05B8A0077BB62 /* Description.h in Headers */,
 				A1F381D91FA72667001EC33D /* AxisRendererBase.h in Headers */,
 				A12889D31FA01F3B0077BB62 /* BarLineScatterCandleBubbleChartDataProvider.h in Headers */,
+				A1F381FD1FA87D6D001EC33D /* IBarChartDataSet.h in Headers */,
 				A12889D41FA01F3B0077BB62 /* ChartDataProvider.h in Headers */,
 				A12889DA1FA01F3B0077BB62 /* ChartLimitLine.h in Headers */,
 				A137F5A11FA0C50D0000D457 /* IMarker.h in Headers */,
 				A1F381E51FA72718001EC33D /* XAxisRenderer.h in Headers */,
 				A137F59E1FA0C24C0000D457 /* Highlight.h in Headers */,
 				A1288A211FA05F4A0077BB62 /* DataRenderer.h in Headers */,
+				A1F381EE1FA876D1001EC33D /* BarLineScatterCandleBubbleRenderer.h in Headers */,
 				A1288A1D1FA05E090077BB62 /* LegendRenderer.h in Headers */,
 				A1288A191FA05DFA0077BB62 /* Renderer.h in Headers */,
 				A137F59B1FA0C1FC0000D457 /* IHighlighter.h in Headers */,
 				A1F381DD1FA7267B001EC33D /* YAxisRenderer.h in Headers */,
+				A1F382041FA96249001EC33D /* ChartDataSet.h in Headers */,
 				A12889E41FA01F3B0077BB62 /* ChartAnimationEasing.h in Headers */,
 				A12889D71FA01F3B0077BB62 /* IAxisValueFormatter.h in Headers */,
 				A12889EC1FA021BF0077BB62 /* YAxis.h in Headers */,
+				A1F381F41FA8782D001EC33D /* BarLineScatterCandleBubbleChartData.h in Headers */,
 				A1288A2D1FA1BA970077BB62 /* DefaultValueFormatter.h in Headers */,
 				A12889E01FA01F3B0077BB62 /* ChartViewBase.h in Headers */,
 				A1F381D61FA72440001EC33D /* ChartUtils.h in Headers */,
@@ -557,6 +604,8 @@
 			files = (
 				A1F381E21FA726D4001EC33D /* Transformer.m in Sources */,
 				A1288A221FA05F4A0077BB62 /* DataRenderer.m in Sources */,
+				A1F381F51FA8782D001EC33D /* BarLineScatterCandleBubbleChartData.m in Sources */,
+				A1F381EB1FA876B6001EC33D /* BarChartRenderer.m in Sources */,
 				A1288A1A1FA05DFA0077BB62 /* Renderer.m in Sources */,
 				A137F59F1FA0C24C0000D457 /* Highlight.m in Sources */,
 				A1288A0A1FA047050077BB62 /* ViewPortHandler.m in Sources */,
@@ -570,6 +619,9 @@
 				A12889FD1FA02E910077BB62 /* ChartBaseDataSet.m in Sources */,
 				A1288A2E1FA1BA970077BB62 /* DefaultValueFormatter.m in Sources */,
 				A12889E11FA01F3B0077BB62 /* ChartViewBase.m in Sources */,
+				A1F381EF1FA876D1001EC33D /* BarLineScatterCandleBubbleRenderer.m in Sources */,
+				A1F381F91FA8783E001EC33D /* BarChartData.m in Sources */,
+				A1F382051FA96249001EC33D /* ChartDataSet.m in Sources */,
 				A12889ED1FA021BF0077BB62 /* YAxis.m in Sources */,
 				A1288A0E1FA04C940077BB62 /* ChartData.m in Sources */,
 				A1288A061FA044870077BB62 /* ChartDataEntry.m in Sources */,

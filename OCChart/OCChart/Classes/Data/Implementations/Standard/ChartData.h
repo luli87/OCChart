@@ -21,6 +21,7 @@
 @property(assign,nonatomic)double rightAxisMin;
 @property(assign,nonatomic,readonly)int entryCount;
 @property (strong,nonatomic)NSMutableArray<id<IChartDataSet>> * dataSets;
+@property(weak,nonatomic,readonly)id<IChartDataSet> maxEntryCountSet;
 -(void)notifyDataChanged;
 -(void)calcMinMaxY:(double)fromeY to:(double)toY;
 -(void)calcMinMax;

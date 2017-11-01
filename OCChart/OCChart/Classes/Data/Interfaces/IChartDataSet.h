@@ -19,6 +19,7 @@
 @property(assign,nonatomic,readonly)int entryCount;
 @property(assign,nonatomic,readonly)BOOL needsFormatter;
 @property (weak,nonatomic) id<IValueFormatter> valueFormatter;
+@property(assign,nonatomic,readonly)BOOL isVisible;
 @property(assign,nonatomic,readonly)AxisDependency axisDependency;
 -(void)notifyDataSetChanged;
 -(void)calcMinMax;

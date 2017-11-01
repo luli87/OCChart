@@ -200,4 +200,18 @@
     [self notifyDataChanged];
 }
 
+-(id<IChartDataSet>)maxEntryCountSet
+{
+    if (self.dataSets.count == 0) {
+        return nil;
+    }
+    id<IChartDataSet> max = [self.dataSets firstObject];
+    for (id<IChartDataSet> set in self.dataSets) {
+        if (set.entryCount > max.entryCount) {
+            max = set;
+        }
+    }
+    return max;
+}
+
 @end

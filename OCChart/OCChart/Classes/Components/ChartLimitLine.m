@@ -10,4 +10,15 @@
 
 @implementation ChartLimitLine
 
+-(id)init
+{
+    if (self = [super init]) {
+        self.label = @"";
+        self.labelPosition = rightTop;
+        self.drawLabelEnabled = YES;
+        self.valueTextColor = [UIColor blackColor];
+    }
+    return self;
+}
+
 @end

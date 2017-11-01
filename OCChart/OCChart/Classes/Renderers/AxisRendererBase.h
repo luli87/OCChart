@@ -15,4 +15,5 @@
 -(id)init:(ViewPortHandler *)viewPortHandler axis:(AxisBase *)axis transformer:(Transformer *)Transformer;
 -(void)computeAxis:(double)min max:(double)max inverted:(BOOL)inverted;
 -(void)renderAxisLine:(CGContextRef)context;
+-(void)renderLimitLines:(CGContextRef)context;
 @end
