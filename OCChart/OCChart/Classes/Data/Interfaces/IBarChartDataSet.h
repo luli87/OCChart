@@ -9,5 +9,5 @@
 #import "IBarLineScatterCandleBubbleChartDataSet.h"
 
 @protocol IBarChartDataSet <IBarLineScatterCandleBubbleChartDataSet>
-
+@property(assign,nonatomic,readonly)BOOL isStacked;
 @end

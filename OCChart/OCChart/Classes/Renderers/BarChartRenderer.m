@@ -9,6 +9,7 @@
 #import "BarChartRenderer.h"
 #import "IBarChartDataSet.h"
 #import "Transformer.h"
+#import "BarChartDataEntry.h"
 
 @implementation Buffer
 @end
@@ -44,8 +45,20 @@
     double barWidthHalf = self.dataProvider.barData.barWidth/2;
     Buffer *buffer = self.buffers[index];
     int bufferIndex = 0;
+    double x;
+    double y;
     for (int i = 0; i < dataSet.entryCount; i++) {
         ChartDataEntry *entry = [dataSet entryForIndex:i];
+        if ([entry isMemberOfClass:[BarChartDataEntry class]]) {
+            BarChartDataEntry *barDataEntry = (BarChartDataEntry *)entry;
+            x = barDataEntry.x;
+            y = barDataEntry.y;
+            if (!dataSet.isStacked || barDataEntry.yValues.count == 0) {
+                
+            } else {
+                
+            }
+        }
     }
 }
 

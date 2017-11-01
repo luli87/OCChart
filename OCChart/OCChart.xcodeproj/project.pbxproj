@@ -31,8 +31,6 @@
 		A12889ED1FA021BF0077BB62 /* YAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = A12889EB1FA021BF0077BB62 /* YAxis.m */; };
 		A12889EF1FA02C4E0077BB62 /* IValueFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889EE1FA02C4E0077BB62 /* IValueFormatter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A12889F91FA02E7A0077BB62 /* IChartDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889F81FA02E7A0077BB62 /* IChartDataSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A12889FC1FA02E910077BB62 /* ChartBaseDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889FA1FA02E910077BB62 /* ChartBaseDataSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A12889FD1FA02E910077BB62 /* ChartBaseDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A12889FB1FA02E910077BB62 /* ChartBaseDataSet.m */; };
 		A1288A011FA043170077BB62 /* ChartDataEntryBase.h in Headers */ = {isa = PBXBuildFile; fileRef = A12889FF1FA043170077BB62 /* ChartDataEntryBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1288A021FA043170077BB62 /* ChartDataEntryBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A1288A001FA043170077BB62 /* ChartDataEntryBase.m */; };
 		A1288A051FA044870077BB62 /* ChartDataEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = A1288A031FA044870077BB62 /* ChartDataEntry.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -85,6 +83,12 @@
 		A1F381FD1FA87D6D001EC33D /* IBarChartDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F381FC1FA87D6D001EC33D /* IBarChartDataSet.h */; };
 		A1F382041FA96249001EC33D /* ChartDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F382021FA96249001EC33D /* ChartDataSet.h */; };
 		A1F382051FA96249001EC33D /* ChartDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F382031FA96249001EC33D /* ChartDataSet.m */; };
+		A1F382081FA9670F001EC33D /* BarChartDataEntry.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F382061FA9670F001EC33D /* BarChartDataEntry.h */; };
+		A1F382091FA9670F001EC33D /* BarChartDataEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F382071FA9670F001EC33D /* BarChartDataEntry.m */; };
+		A1F3820C1FA96F9C001EC33D /* Range.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F3820A1FA96F9C001EC33D /* Range.h */; };
+		A1F3820D1FA96F9C001EC33D /* Range.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F3820B1FA96F9C001EC33D /* Range.m */; };
+		A1F382101FA97451001EC33D /* ChartBaseDataSet.h in Headers */ = {isa = PBXBuildFile; fileRef = A1F3820E1FA97451001EC33D /* ChartBaseDataSet.h */; };
+		A1F382111FA97451001EC33D /* ChartBaseDataSet.m in Sources */ = {isa = PBXBuildFile; fileRef = A1F3820F1FA97451001EC33D /* ChartBaseDataSet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,8 +126,6 @@
 		A12889EB1FA021BF0077BB62 /* YAxis.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YAxis.m; sourceTree = "<group>"; };
 		A12889EE1FA02C4E0077BB62 /* IValueFormatter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IValueFormatter.h; sourceTree = "<group>"; };
 		A12889F81FA02E7A0077BB62 /* IChartDataSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IChartDataSet.h; sourceTree = "<group>"; };
-		A12889FA1FA02E910077BB62 /* ChartBaseDataSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartBaseDataSet.h; sourceTree = "<group>"; };
-		A12889FB1FA02E910077BB62 /* ChartBaseDataSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartBaseDataSet.m; sourceTree = "<group>"; };
 		A12889FF1FA043170077BB62 /* ChartDataEntryBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartDataEntryBase.h; sourceTree = "<group>"; };
 		A1288A001FA043170077BB62 /* ChartDataEntryBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartDataEntryBase.m; sourceTree = "<group>"; };
 		A1288A031FA044870077BB62 /* ChartDataEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartDataEntry.h; sourceTree = "<group>"; };
@@ -180,6 +182,12 @@
 		A1F381FC1FA87D6D001EC33D /* IBarChartDataSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IBarChartDataSet.h; sourceTree = "<group>"; };
 		A1F382021FA96249001EC33D /* ChartDataSet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ChartDataSet.h; sourceTree = "<group>"; };
 		A1F382031FA96249001EC33D /* ChartDataSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ChartDataSet.m; sourceTree = "<group>"; };
+		A1F382061FA9670F001EC33D /* BarChartDataEntry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BarChartDataEntry.h; sourceTree = "<group>"; };
+		A1F382071FA9670F001EC33D /* BarChartDataEntry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BarChartDataEntry.m; sourceTree = "<group>"; };
+		A1F3820A1FA96F9C001EC33D /* Range.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Range.h; sourceTree = "<group>"; };
+		A1F3820B1FA96F9C001EC33D /* Range.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Range.m; sourceTree = "<group>"; };
+		A1F3820E1FA97451001EC33D /* ChartBaseDataSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartBaseDataSet.h; sourceTree = "<group>"; };
+		A1F3820F1FA97451001EC33D /* ChartBaseDataSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartBaseDataSet.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,8 +289,8 @@
 		A12889F11FA02DAB0077BB62 /* Implementations */ = {
 			isa = PBXGroup;
 			children = (
-				A12889FA1FA02E910077BB62 /* ChartBaseDataSet.h */,
-				A12889FB1FA02E910077BB62 /* ChartBaseDataSet.m */,
+				A1F3820E1FA97451001EC33D /* ChartBaseDataSet.h */,
+				A1F3820F1FA97451001EC33D /* ChartBaseDataSet.m */,
 				A12889FE1FA043030077BB62 /* Standard */,
 			);
 			path = Implementations;
@@ -357,6 +365,8 @@
 				A1F382031FA96249001EC33D /* ChartDataSet.m */,
 				A1288A031FA044870077BB62 /* ChartDataEntry.h */,
 				A1288A041FA044870077BB62 /* ChartDataEntry.m */,
+				A1F382061FA9670F001EC33D /* BarChartDataEntry.h */,
+				A1F382071FA9670F001EC33D /* BarChartDataEntry.m */,
 				A1288A0B1FA04C940077BB62 /* ChartData.h */,
 				A1288A0C1FA04C940077BB62 /* ChartData.m */,
 				A1F381F21FA8782D001EC33D /* BarLineScatterCandleBubbleChartData.h */,
@@ -382,6 +392,8 @@
 				A137F59A1FA0C1FC0000D457 /* IHighlighter.h */,
 				A137F59C1FA0C24C0000D457 /* Highlight.h */,
 				A137F59D1FA0C24C0000D457 /* Highlight.m */,
+				A1F3820A1FA96F9C001EC33D /* Range.h */,
+				A1F3820B1FA96F9C001EC33D /* Range.m */,
 			);
 			path = Highlight;
 			sourceTree = "<group>";
@@ -462,7 +474,6 @@
 				A1288A091FA047050077BB62 /* ViewPortHandler.h in Headers */,
 				A1F381F11FA8775F001EC33D /* BarChartDataProvider.h in Headers */,
 				A1288A0D1FA04C940077BB62 /* ChartData.h in Headers */,
-				A12889FC1FA02E910077BB62 /* ChartBaseDataSet.h in Headers */,
 				A1288A011FA043170077BB62 /* ChartDataEntryBase.h in Headers */,
 				A12889DC1FA01F3B0077BB62 /* ComponentBase.h in Headers */,
 				A12889EF1FA02C4E0077BB62 /* IValueFormatter.h in Headers */,
@@ -474,6 +485,7 @@
 				A1F381E11FA726D4001EC33D /* Transformer.h in Headers */,
 				A1F381F81FA8783E001EC33D /* BarChartData.h in Headers */,
 				A12889E21FA01F3B0077BB62 /* Animator.h in Headers */,
+				A1F382081FA9670F001EC33D /* BarChartDataEntry.h in Headers */,
 				A1288A151FA05BDE0077BB62 /* Legend.h in Headers */,
 				A1288A051FA044870077BB62 /* ChartDataEntry.h in Headers */,
 				A12889DE1FA01F3B0077BB62 /* BarLineChartViewBase.h in Headers */,
@@ -496,9 +508,11 @@
 				A12889E41FA01F3B0077BB62 /* ChartAnimationEasing.h in Headers */,
 				A12889D71FA01F3B0077BB62 /* IAxisValueFormatter.h in Headers */,
 				A12889EC1FA021BF0077BB62 /* YAxis.h in Headers */,
+				A1F3820C1FA96F9C001EC33D /* Range.h in Headers */,
 				A1F381F41FA8782D001EC33D /* BarLineScatterCandleBubbleChartData.h in Headers */,
 				A1288A2D1FA1BA970077BB62 /* DefaultValueFormatter.h in Headers */,
 				A12889E01FA01F3B0077BB62 /* ChartViewBase.h in Headers */,
+				A1F382101FA97451001EC33D /* ChartBaseDataSet.h in Headers */,
 				A1F381D61FA72440001EC33D /* ChartUtils.h in Headers */,
 				A1A92AFD1F9F6FCC009EDF51 /* OCChart.h in Headers */,
 			);
@@ -603,20 +617,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1F381E21FA726D4001EC33D /* Transformer.m in Sources */,
+				A1F382091FA9670F001EC33D /* BarChartDataEntry.m in Sources */,
 				A1288A221FA05F4A0077BB62 /* DataRenderer.m in Sources */,
 				A1F381F51FA8782D001EC33D /* BarLineScatterCandleBubbleChartData.m in Sources */,
+				A1F382111FA97451001EC33D /* ChartBaseDataSet.m in Sources */,
 				A1F381EB1FA876B6001EC33D /* BarChartRenderer.m in Sources */,
 				A1288A1A1FA05DFA0077BB62 /* Renderer.m in Sources */,
 				A137F59F1FA0C24C0000D457 /* Highlight.m in Sources */,
 				A1288A0A1FA047050077BB62 /* ViewPortHandler.m in Sources */,
 				A12889D61FA01F3B0077BB62 /* DefaultAxisValueFormatter.m in Sources */,
+				A1F3820D1FA96F9C001EC33D /* Range.m in Sources */,
 				A1288A1E1FA05E090077BB62 /* LegendRenderer.m in Sources */,
 				A1288A161FA05BDE0077BB62 /* Legend.m in Sources */,
 				A1F381DE1FA7267B001EC33D /* YAxisRenderer.m in Sources */,
 				A12889DD1FA01F3B0077BB62 /* ComponentBase.m in Sources */,
 				A1F381E61FA72718001EC33D /* XAxisRenderer.m in Sources */,
 				A1F381DA1FA72667001EC33D /* AxisRendererBase.m in Sources */,
-				A12889FD1FA02E910077BB62 /* ChartBaseDataSet.m in Sources */,
 				A1288A2E1FA1BA970077BB62 /* DefaultValueFormatter.m in Sources */,
 				A12889E11FA01F3B0077BB62 /* ChartViewBase.m in Sources */,
 				A1F381EF1FA876D1001EC33D /* BarLineScatterCandleBubbleRenderer.m in Sources */,

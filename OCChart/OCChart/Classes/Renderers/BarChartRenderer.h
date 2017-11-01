@@ -9,7 +9,7 @@
 #import "BarLineScatterCandleBubbleRenderer.h"
 #import "BarChartDataProvider.h"
 
-@interface Buffer
+@interface Buffer : NSObject 
 @end
 
 @interface BarChartRenderer : BarLineScatterCandleBubbleRenderer

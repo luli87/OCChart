@@ -6,9 +6,8 @@
 //  Copyright © 2017年 lu li. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "ChartBaseDataSet.h"
 
-@interface ChartDataSet : NSObject<ChartBaseDataSet>
+@interface ChartDataSet : ChartBaseDataSet
 
 @end

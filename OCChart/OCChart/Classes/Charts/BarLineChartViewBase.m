@@ -103,61 +103,7 @@
     }
     CGContextSaveGState(context);
     CGContextClipToRect(context, self.viewPortHandler.contentRect);
-    self.renderer dra
-    
-    // make sure the data cannot be drawn outside the content-rect
-    context.saveGState()
-    context.clip(to: _viewPortHandler.contentRect)
-    renderer?.drawData(context: context)
-    
-    // if highlighting is enabled
-    if (valuesToHighlight())
-    {
-        renderer?.drawHighlighted(context: context, indices: _indicesToHighlight)
-    }
-    
-    context.restoreGState()
-    
-    renderer!.drawExtras(context: context)
-    
-    if _xAxis.isEnabled && !_xAxis.isDrawLimitLinesBehindDataEnabled
-    {
-        _xAxisRenderer?.renderLimitLines(context: context)
-    }
-    
-    if _leftAxis.isEnabled && !_leftAxis.isDrawLimitLinesBehindDataEnabled
-    {
-        _leftYAxisRenderer?.renderLimitLines(context: context)
-    }
-    
-    if _rightAxis.isEnabled && !_rightAxis.isDrawLimitLinesBehindDataEnabled
-    {
-        _rightYAxisRenderer?.renderLimitLines(context: context)
-    }
-    
-    _xAxisRenderer.renderAxisLabels(context: context)
-    _leftYAxisRenderer.renderAxisLabels(context: context)
-    _rightYAxisRenderer.renderAxisLabels(context: context)
-    
-    if clipValuesToContentEnabled
-    {
-        context.saveGState()
-        context.clip(to: _viewPortHandler.contentRect)
-        
-        renderer!.drawValues(context: context)
-        
-        context.restoreGState()
-    }
-    else
-    {
-        renderer!.drawValues(context: context)
-    }
-    
-    _legendRenderer.renderLegend(context: context)
-    
-    drawDescription(context: context)
-    
-    drawMarkers(context: context)
+    [self.renderer drawData:context];
 }
 
 -(void)drawGridBackground:(CGContextRef)context
